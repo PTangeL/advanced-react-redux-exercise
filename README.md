@@ -14,9 +14,9 @@ You need to have `node`and `npm`installed in your computer.
 
 ## Exercise
 
-1. Create a logger middleware to log in the console every action that is dispatched
+1. Create a logger middleware to log every action that is dispatched in the console
 
-2. Create a promise middleware to teach the store's dispatch how to understand promises. 
+2. Create a promise middleware to teach the store's dispatch how to understand promises
 
 3. Move the api call in the fetch method in  /containers/UsersContainer.jsx to a fetchUser action creator in /actions/users.js
 
