@@ -66,6 +66,6 @@
     "redux-promise": "^0.5.3",
     "redux-saga": "^0.13.0",
     "redux-thunk": "^2.2.0",
-    "whatwg-fetch": "^1.0.0"
+    "whatwg-fetch": "^2.0.0"
   }
 }
