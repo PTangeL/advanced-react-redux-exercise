@@ -15,7 +15,11 @@ class UsersContainer extends React.Component {
   }
 
   fetch = params => {
-    this.props.fetchUsers(params)
+    api.fetchUsers(params).then( ({ users, nextUrl }) => {
+      this.props.receiveUsers(users, nextUrl)
+    }).catch(error => {
+      console.log('error', error)
+    })
   }
 
   sendMessageTo = user => {
