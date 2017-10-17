@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import * as userActions from '../actions/users'
+import * as api from '../api'
 import * as uiActions from '../actions/ui'
 import * as messageActions from '../actions/message'
 import Users from '../components/User/Users'
@@ -51,6 +52,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = ({
   fetchUsers: userActions.fetchUsers,
+  receiveUsers: userActions.receiveUsers,
   setIsSideMenuOpen: uiActions.setIsSideMenuOpen,
   setMessageTo: messageActions.setMessageTo
 })
